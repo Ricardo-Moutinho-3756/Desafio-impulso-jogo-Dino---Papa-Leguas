@@ -1,0 +1,56 @@
+body {
+/*  background: #f0f2f3;*/
+  background-image: url(PapaLeguas.jpg);
+  height: 400px;
+  background-size: cover;
+  text-align: center;
+  font-size: 45px;
+  color: #2310cf;
+  margin: 70px 0;
+  font-family: arial;
+}
+
+.dino {
+  position: absolute;
+  bottom: 0;
+  background-image: url(Road_Runner_2.gif);
+  width: 123px;
+  height: 57px;
+}
+
+.cactus {
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: 145px;
+/*  background-image: url(cactus.png);*/
+  background-image: url(Coyote.gif);
+  background-size:contain;
+}
+
+.game-over {
+  text-align: center;
+  color: #666;
+  margin: 70px 0;
+  font-family: arial;
+}
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+.background {
+  position: absolute;
+  bottom: 0px;
+/*  background-image: url('background.png');*/
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+}
